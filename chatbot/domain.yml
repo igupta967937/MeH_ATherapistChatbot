@@ -1,0 +1,104 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- help
+- reply_name
+- reply_age
+- reply_gender
+- reply_occupation
+- reply_email
+- reply_bothering
+- reply_mood
+- reply_physical
+- reply_exp
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+entities:
+- name
+- age
+- gender
+- occupation
+- email
+- feeling
+- emotion
+- physical
+- exp
+slots:
+  age:
+    type: unfeaturized
+  bothering:
+    type: unfeaturized
+  email:
+    type: unfeaturized
+  exp:
+    type: unfeaturized
+  gender:
+    type: unfeaturized
+  mood:
+    type: unfeaturized
+  name:
+    type: unfeaturized
+  occupation:
+    type: unfeaturized
+  physical:
+    type: unfeaturized
+responses:
+  utter_greet:
+  - text: 'Hello! What can I do for you? '
+  utter_assurance:
+  - text: Don’t worry! That’s what I’m here for.
+  utter_ask_name:
+  - text: Can you tell me your name?
+  utter_ask_age:
+  - text: How old are you?
+  utter_ask_gender:
+  - text: And what is your gender?
+  utter_ask_occupation:
+  - text: What is your occupation, if you have one?
+  utter_ask_email:
+  - text: Alright, thank you! Lastly, can I have your email id?
+  utter_ask_bothering:
+  - text: Okay, so talk to me. What's on your mind?
+  utter_ask_mood:
+  - text: Overall, how would you describe your mood?
+  utter_ask_physical:
+  - text: Are there are physical issues you face?
+  utter_ask_exp:
+  - text: Can you describe any experiences that have caused these feelings?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Goodbye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- utter_greet
+- utter_assurance
+- utter_ask_name
+- utter_ask_age
+- utter_ask_gender
+- utter_ask_occupation
+- utter_ask_email
+- utter_ask_bothering
+- utter_ask_mood
+- utter_ask_physical
+- utter_ask_exp
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- action_default_fallback
+forms:
+- user_form
